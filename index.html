@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" class="menu-img" >
+            <img src="images/logo.png" class="logo" >
+
+            <ul>
+                <li><a href="https://surya.co.in/consumer-lighting/">Lighting</a></li>
+                <li><a href="https://surya.co.in/home-appliances/">Home Appliances</a></li>
+                <li><a href="https://surya.co.in/fans/">Fans</a></li>
+                <li><a href="https://surya.co.in/pvc-pipes/">PVC pipes</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><Span></Span></button>
+        </nav>
+
+        <div class="lamp-container" >
+            <img onclick="lampoff()" src="images/lamp.png" class="lamp" id="bhujado" >
+            <img src="images/light.png" class="light" id="lamps" >
+        </div>
+        <div class="text-container">
+            <h1>Latest <br>in lighting</h1>
+            <br>
+            <p>Counted amongst one of the top lighting R&D centres in India, the Surya Technology and Innovation Centre (STIC) at Noida caters to Photometric, Electrical, Mechanical, Environmental, and Endurance test requirements for development of latest generation energy-saving luminaires. Additionally, the STIC is also being used to carry out Photometric Optical Testing of the luminaire for quality control.</p>
+            <br>
+                   <p>
+                STIC houses the Mirror Goniophotometer from LMT, Germany, an equipment for precise and accurate measurement of the distribution of light in the lamps, luminaires and LED chips, which can be found in technological centres of some of the leading lighting companies in the world. STIC has approvals from DSIR, Govt. of India and accreditation from NABL.</p>
+            <a target="_blank" rel="noreferrer noopener" href="https://surya.co.in/">Check All Collections</a>
+           
+        </div>
+    </div>
+    <script>
+        var btn=document.getElementById("btn");
+        var lamps=document.getElementById("lamps");
+
+        function toggleBtn(){
+
+            btn.classList.toggle("active")
+            lamps.classList.toggle("on")
+        }
+        var bhujado=document.getElementById("bhujado")
+        function lampoff(){
+
+            
+            lamps.classList.toggle("on")
+        }
+       
+    </script>
+</body>
+</html>
